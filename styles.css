@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 1rem 1.5rem; /* Adjust navbar padding */
+}
+
+.navbar-light .navbar-brand img {
+  max-width: 150px; /* Responsive logo size */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333; /* Adjust link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Customizing Dropdown Menu Icon */
+.navbar-light .navbar-toggler {
+  background-color: transparent; /* Make background transparent */
+  border: none; /* Remove border */
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: transparent; /* Make the default icon transparent */
+}
+
+.navbar-light .navbar-toggler:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.navbar-light .navbar-toggler-icon::after {
+  content: ''; /* Remove default icon */
+}
+
+/* Add your own custom icon */
+.navbar-light .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cline x1="4" y1="7" x2="26" y2="7"/%3E%3Cline x1="4" y1="15" x2="26" y2="15"/%3E%3Cline x1="4" y1="23" x2="26" y2="23"/%3E%3C/svg%3E');
+}
+
+.navbar-light .navbar-toggler-icon {
+  width: 30px; /* Set icon width */
+  height: 30px; /* Set icon height */
+}
+
+/* Hero Section */
+.hero {
+  color: white; /* Text color for hero section */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Section Styles */
+section {
+  padding: 5rem 0; /* Padding for sections */
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 3rem; /* Space below headings */
+}
+
+/* Card Styles */
+.card {
+  border: none; /* Remove default card border */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Prevent image overflow */
+  transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card img {
+  border-radius: 10px 10px 0 0; /* Rounded corners for card images */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40; /* Dark footer background */
+  text-align: center; /* Centered footer text */
+}
+
+footer a {
+  color: white; /* White color for footer links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+      height: 60vh; /* Adjust height for smaller screens */
+  }
+
+  .hero h1 {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
